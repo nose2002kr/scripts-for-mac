@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 STASH_NAME=`git stash list | grep Testing-Env |  awk -F: '{ print $1 }'`
 if [ -z "$STASH_NAME" ]; then
